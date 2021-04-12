@@ -1,4 +1,4 @@
-class Iron  {
+class iron  {
     constructor(x,y){
             var options = {
                     'restitution':0.8,
@@ -12,7 +12,7 @@ class Iron  {
                 World.add(world, this.body);
             }
               display(){
-                var pos =this.body.postion;
+                var pos =this.body.position;
                 var angle= this.body.angle;
                  push();
                 translate(pos.x,pos.y);

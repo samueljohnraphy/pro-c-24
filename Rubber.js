@@ -1,5 +1,5 @@
-class Hammer  {
-    constructor(x,y){
+class rubber  {
+    constructor(x,y,r){
     var options = {
     restitution:0.3,
     friction :5,
@@ -8,20 +8,20 @@ class Hammer  {
     this.x=x
      this.y=y
       this.r=r
-      this.body=Bodies.cricle(this.x,this.y(this.r-20/2,option))
+      this.body=Bodies.circle(this.x,this.y,(this.r-20/2),options)
       World.add(world, this.body);
      }    
      display()
      {
-        var pos =this.body.postion;
+        var pos =this.body.position;
         push();
         translate(pos.x,pos.y);
         rectMode(CENTER);
-        strockWeight(4);
-        strock('black');
+        strokeWeight(4);
+        stroke('black');
          fill('blue');
         
-        ellips(0,0,this.r,this.r);
+        ellipse(0,0,this.r,this.r);
          pop();
               }
             }

@@ -1,4 +1,4 @@
-class Hammer  {
+class hammer  {
     constructor(x,y){
     var options = {
     'restitution':2,
@@ -9,18 +9,18 @@ class Hammer  {
      this.width = 150;
       this.height = 40;
       World.add(world, this.body);
-            
-     display()
-  var pos =this.body.postion;
+            }
+     display(){
+  var pos =this.body.position;
      pos.x = mouseX
-     pos.x = mouseXY
+     pos.x = mouseY
                 var angle= this.body.angle;
 
         push();
          translate(pos.x,pos.y);
         rotate(angle);
-        strockWeight(3)
-        strock('white')
+        strokeWeight(3)
+        stroke('white')
          fill('orange')
         rectMode(CENTER)
          rect(0,0,this.width,this.height);
